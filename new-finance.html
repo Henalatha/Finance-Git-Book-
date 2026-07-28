@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Finance Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">iFinance</div>
+
+        <div class="nav-right">
+            <input type="text" placeholder="Search...">
+            <button><i class="fa fa-search"></i></button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            Dashboard / Finance's / New Finance
+        </div>
+
+        <!-- Action Icons -->
+        <div class="action-icons">
+            <button class="icon-btn">RF</button>
+            <button class="icon-btn">M</button>
+        </div>
+
+        <!-- New Finance -->
+        <div class="card">
+            <div class="card-header" onclick="toggleSection('financeForm')">
+                <span>New Finance</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+
+            <div class="card-body" id="financeForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>HP #</label>
+                        <input type="text" id="hpNo">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Reg No</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Makers #</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Model</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chasis No</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Vehicle Search</label>
+                        <button class="search-btn">
+                            <i class="fa fa-home"></i>
+                            AP RTA Vehicle Search
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Engine No</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label><input type="checkbox"> CB</label>
+                        <label><input type="checkbox"> CLR</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label>H.P.N Date</label>
+                        <input type="date" value="2026-07-06">
+                    </div>
+
+                    <div class="form-group">
+                        <label>EMI Date</label>
+                        <input type="date">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Finance Information -->
+        <div class="card">
+            <div class="card-header" onclick="toggleSection('financeInfo')">
+                <span>Finance Information</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+
+            <div class="card-body" id="financeInfo">
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label>Loan Amount</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interest Rate (%)</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>EMI Period (Months)</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Monthly EMI</label>
+                        <input type="number">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Communications -->
+        <div class="card">
+            <div class="card-header" onclick="toggleSection('communication')">
+                <span>Communications</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+
+            <div class="card-body" id="communication">
+                <textarea rows="5" placeholder="Customer communication logs"></textarea>
+            </div>
+        </div>
+
+        <!-- Attachments -->
+        <div class="card">
+            <div class="card-header" onclick="toggleSection('attachments')">
+                <span>Attachments</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+
+            <div class="card-body" id="attachments">
+                <input type="file" multiple>
+            </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="submit-area">
+            <button class="submit-btn" onclick="submitFinance()">
+                Submit
+            </button>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 iFinance Management System
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.navbar{
+    background:#1e3a8a;
+    color:white;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.nav-right input{
+    padding:8px;
+    border:none;
+    border-radius:5px;
+}
+
+.nav-right button{
+    padding:8px 12px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.container{
+    padding:20px;
+}
+
+.breadcrumb{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.action-icons{
+    margin-bottom:20px;
+}
+
+.icon-btn{
+    padding:10px 20px;
+    border:none;
+    background:#1e3a8a;
+    color:white;
+    border-radius:5px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-header{
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    cursor:pointer;
+    background:#eef2ff;
+    font-weight:bold;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.checkbox-group{
+    flex-direction:row;
+    gap:20px;
+    align-items:center;
+}
+
+.search-btn{
+    padding:10px;
+    border:none;
+    background:#10b981;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.submit-area{
+    text-align:center;
+}
+
+.submit-btn{
+    padding:12px 40px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.submit-btn:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}

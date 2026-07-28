@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Reports</title>
+    <link rel="stylesheet" href="emi-reports.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2>iFinance</h2>
+    </header>
+
+    <!-- Action Bar -->
+    <div class="action-bar">
+        <button>Receipt</button>
+        <button>Out Payment</button>
+        <button>Hand Loans</button>
+        <button>EMI Reports</button>
+        <button>OD's</button>
+        <button>STM</button>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        Finance Details / EMI Reports
+    </div>
+
+    <div class="container">
+
+        <h2>EMI's — HP No: TYRE0025</h2>
+
+        <!-- Summary Cards -->
+        <div class="summary-grid">
+
+            <div class="card">
+                <h4>Paid Amount</h4>
+                <p>0</p>
+            </div>
+
+            <div class="card">
+                <h4>Pending Balance</h4>
+                <p>0</p>
+            </div>
+
+            <div class="card">
+                <h4>Balance</h4>
+                <p>49278</p>
+            </div>
+
+            <div class="card">
+                <h4>Total Balance</h4>
+                <p>49278</p>
+            </div>
+
+            <div class="card">
+                <h4>Total EMI's</h4>
+                <p>6</p>
+            </div>
+
+            <div class="card">
+                <h4>Paid EMI's</h4>
+                <p>0</p>
+            </div>
+
+            <div class="card">
+                <h4>Remaining EMI's</h4>
+                <p>6</p>
+            </div>
+
+            <div class="card">
+                <h4>Total Loan</h4>
+                <p>0</p>
+            </div>
+
+        </div>
+
+        <!-- EMI Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SNO</th>
+                        <th>Due Date</th>
+                        <th>Amount</th>
+                        <th>Paid Int</th>
+                        <th>Paid Amt</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+
+                <tbody id="emiTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="note">
+            <p><b>Amount</b> column shows EMI (Interest component)</p>
+            <p><b>Balance</b> column shows Due (Cumulative Balance)</p>
+            <p>SNO and Due Date open EMI Payment screen.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 iFinance Management System
+    </footer>
+
+    <script src="emi-reports.js"></script>
+
+</body>
+</html>

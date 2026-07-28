@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">iFinance</div>
+        <div class="nav-links">
+            <a href="#">Transactions</a>
+            <a href="#">Others</a>
+            <a href="#">Finance's</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            Dashboard / Finance's / New Finance
+        </div>
+
+        <!-- Header -->
+        <div class="page-header">
+            <h2>Finance's (1376)</h2>
+            <button class="btn-new" onclick="window.location.href='new-finance.html'">
+                + New Finance
+            </button>
+        </div>
+
+        <!-- Finance Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SNO</th>
+                        <th>HP No</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>REG No</th>
+                        <th>Village</th>
+                        <th>EMI Period</th>
+                        <th>EMI Amount</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr onclick="window.location.href='customer-detail.html'">
+                        <td>1</td>
+                        <td>TYRE0025</td>
+                        <td>GOLLAPALLI JEEVA</td>
+                        <td>
+                            9948693719 <br>
+                            <a href="#">🏠 Link</a>
+                        </td>
+                        <td>825-20..</td>
+                        <td>TADEPALLIGUDEM</td>
+                        <td>6</td>
+                        <td>8213</td>
+                        <td>
+                            <button class="home-btn">🏠</button>
+                        </td>
+                    </tr>
+
+                    <tr onclick="window.location.href='customer-detail.html'">
+                        <td>2</td>
+                        <td>FCSAFTPG0049</td>
+                        <td>NEKKALAPUDI MOHAN NAGA AN</td>
+                        <td>
+                            9948412510 <br>
+                            <a href="#">🏠 Link</a>
+                        </td>
+                        <td>TR</td>
+                        <td>CHEBROLU</td>
+                        <td>12</td>
+                        <td>6533</td>
+                        <td>
+                            <button class="home-btn">🏠</button>
+                        </td>
+                    </tr>
+
+                    <tr onclick="window.location.href='customer-detail.html'">
+                        <td>3</td>
+                        <td>SAFNDD0386</td>
+                        <td>TRIPURARI NISSI KUMARI</td>
+                        <td>
+                            9705256995 <br>
+                            <a href="#">🏠 Link</a>
+                        </td>
+                        <td>AP40CS4173</td>
+                        <td>BUTTAYAGUDEM</td>
+                        <td>18</td>
+                        <td>3362</td>
+                        <td>
+                            <button class="home-btn">🏠</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <span>...</span>
+            <button>69</button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2026 iFinance Management System
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Payment</title>
+    <link rel="stylesheet" href="emi-payment.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">iFinance</div>
+
+        <div class="nav-right">
+            <input type="text" placeholder="Search...">
+            <button>Go</button>
+            <i class="fa-solid fa-user-circle profile"></i>
+        </div>
+    </nav>
+
+    <!-- Action Bar -->
+    <div class="action-bar">
+        <button>Out Payment</button>
+        <button>Hand Loans</button>
+        <button>EMI Reports</button>
+        <button>Bills</button>
+        <button>STM</button>
+        <button>A</button>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        Dashboard / Finance Details / EMI Reports / Payment
+    </div>
+
+    <!-- EMI Payment Card -->
+    <div class="container">
+        <div class="payment-card">
+
+            <h2>EMI Payment</h2>
+
+            <div class="hp-number">
+                <strong>HP No:</strong> TYRE0025
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date" id="date">
+            </div>
+
+            <div class="form-group">
+                <label>Amount</label>
+                <input type="number" id="amount" value="0" min="0">
+            </div>
+
+            <div class="form-group">
+                <label>TA (Travelling Allowance)</label>
+                <input type="number" id="ta" value="0" min="0">
+            </div>
+
+            <div class="form-group">
+                <label>Total</label>
+                <input type="number" id="total" value="0" readonly>
+            </div>
+
+            <button class="submit-btn" onclick="submitPayment()">
+                Submit
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 iFinance Management System
+    </footer>
+
+    <script src="emi-payment.js"></script>
+
+</body>
+
+</html>
