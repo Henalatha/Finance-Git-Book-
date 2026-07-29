@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="settings.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-building-columns"></i>
+        <span>iFinance</span>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="breadcrumb">
+        Dashboard / <span>Settings</span>
+    </div>
+
+    <div class="settings-box">
+
+        <h2>Settings</h2>
+
+        <div class="form-grid">
+
+            <label>EMI Frequency</label>
+            <select id="emiFrequency">
+                <option>YES</option>
+                <option selected>NO</option>
+            </select>
+
+            <label>Day Scroll Protect</label>
+            <select id="scrollProtect">
+                <option>YES</option>
+                <option selected>NO</option>
+            </select>
+
+            <label>Auto Date</label>
+            <select id="autoDate">
+                <option selected>YES</option>
+                <option>NO</option>
+            </select>
+
+            <label>Out Payment Interest</label>
+            <input type="number" id="outInterest" value="0">
+
+            <label>OD Interest</label>
+            <input type="number" step="0.1" id="odInterest" value="0.1">
+
+            <label>Settlement Interest</label>
+            <input type="number" id="settlementInterest" value="0">
+
+            <label>Consultancy Interest</label>
+            <input type="number" id="consultancyInterest" value="18">
+
+            <label>Handloan Type</label>
+            <select id="handloanType">
+                <option>Type 1</option>
+                <option>Type 2</option>
+            </select>
+
+            <label>EMI Report (cb,clr)</label>
+            <select id="emiReport">
+                <option>YES</option>
+                <option selected>NO</option>
+            </select>
+
+            <label>HP Rcpt Series</label>
+            <input type="text" id="hpSeries" value="00">
+
+            <label>HPHL Rcpt Series</label>
+            <input type="text" id="hphlSeries" value="00">
+
+            <label>HPOP Rcpt Series</label>
+            <input type="text" id="hpopSeries" value="00">
+
+            <label>HP OD Rcpt Series</label>
+            <input type="text" id="hpodSeries" value="00">
+
+            <label>HL Rcpt Series</label>
+            <input type="text" id="hlSeries" value="HL">
+
+            <label>HP OP Due Date</label>
+            <select id="dueDate">
+                <option selected>YES</option>
+                <option>NO</option>
+            </select>
+
+            <label>Messages Count</label>
+            <input type="number" id="msgCount" value="31383">
+
+        </div>
+
+        <h3>Business Address</h3>
+
+        <div class="form-grid">
+
+            <label>City / Town</label>
+            <input type="text" id="city" value="TADEPALLIGUDEM">
+
+            <label>Street</label>
+            <input type="text" id="street" value="TANUKU ROAD">
+
+            <label>Mobile</label>
+            <input type="text" id="mobile" value="9014596648">
+
+            <label>Alternate Mobile</label>
+            <input type="text" id="altMobile" value="9346912432">
+
+            <label>State</label>
+
+            <select id="state">
+                <option selected>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+            </select>
+
+        </div>
+
+        <h3>Bank Details</h3>
+
+        <div class="form-grid">
+
+            <label>Bank Account No</label>
+            <input type="text" id="account" value="62447611080">
+
+            <label>Bank Name</label>
+            <input type="text" id="bankName"
+            value="STATE BANK OF INDIA">
+
+            <label>IFSC Code</label>
+            <input type="text" id="ifsc"
+            value="SBIN0020342">
+
+            <label>Branch Name</label>
+            <input type="text" id="branch"
+            value="TADEPALLIGUDEM">
+
+        </div>
+
+        <button id="saveBtn">
+            <i class="fa-solid fa-floppy-disk"></i>
+            Submit
+        </button>
+
+    </div>
+
+</div>
+
+<script src="settings.js"></script>
+
+</body>
+</html>
