@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultancy | iFinance</title>
+
+    <link rel="stylesheet" href="consultancy-list.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>iFinance</span>
+        </div>
+
+        <nav>
+
+            <div class="dropdown">
+
+                <button>
+                    Transactions
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="#">HandLoans</a>
+                    <a href="#">Consultancy</a>
+                    <a href="#">Capitals</a>
+                    <a href="#">Deposits</a>
+                    <a href="#">Cheques</a>
+                    <a href="#">Bank</a>
+                    <a href="#">Chits</a>
+                    <a href="#">Loans</a>
+
+                </div>
+
+            </div>
+
+            <div class="dropdown">
+
+                <button>
+                    Others
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="#">Masters</a>
+                    <a href="#">Agents</a>
+                    <a href="#">Branches</a>
+                    <a href="#">Settings</a>
+
+                </div>
+
+            </div>
+
+            <a href="index.html">Dashboard</a>
+
+        </nav>
+
+        <div class="right-menu">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Bike...">
+
+            <button class="go-btn">
+
+                Go
+
+            </button>
+
+            <img src="https://i.pravatar.cc/40"
+                class="profile">
+
+            <span>Sri Aditya ▼</span>
+
+        </div>
+
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <section class="breadcrumb">
+
+        Dashboard / Consultancy
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <div class="page-header">
+
+            <h2>Consultancy</h2>
+
+            <button id="newBikeBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                New Bike
+
+            </button>
+
+        </div>
+
+        <!-- ================= TABLE ================= -->
+
+        <div class="table-container">
+
+            <table id="consultancyTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>SNO</th>
+                        <th>RC No</th>
+                        <th>Makers</th>
+                        <th>Model</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Repair</th>
+                        <th>Selled</th>
+                        <th>Home</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>AP39NF0499</td>
+
+                        <td>HONDA ACTIVA 125</td>
+
+                        <td>2022</td>
+
+                        <td>19-06-2026</td>
+
+                        <td>45000</td>
+
+                        <td>2800</td>
+
+                        <td>0</td>
+
+                        <td>
+
+                            <i class="fa-solid fa-house home-icon"></i>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2</td>
+
+                        <td>AP39DC2190</td>
+
+                        <td>ACTIVA 5G</td>
+
+                        <td>2019</td>
+
+                        <td>26-06-2026</td>
+
+                        <td>27000</td>
+
+                        <td>11000</td>
+
+                        <td>48000</td>
+
+                        <td>
+
+                            <i class="fa-solid fa-house home-icon"></i>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td>3</td>
+
+                        <td>AP37AB5678</td>
+
+                        <td>TVS NTORQ 125</td>
+
+                        <td>2021</td>
+
+                        <td>05-07-2026</td>
+
+                        <td>52000</td>
+
+                        <td>3500</td>
+
+                        <td>56000</td>
+
+                        <td>
+                            <i class="fa-solid fa-house home-icon"></i>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>4</td>
+
+                        <td>AP39XY1234</td>
+
+                        <td>SUZUKI ACCESS 125</td>
+
+                        <td>2020</td>
+
+                        <td>12-07-2026</td>
+
+                        <td>38000</td>
+
+                        <td>1500</td>
+
+                        <td>42000</td>
+
+                        <td>
+                            <i class="fa-solid fa-house home-icon"></i>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <!-- Empty State -->
+
+            <div id="emptyState" class="empty-state" style="display:none;">
+
+                <i class="fa-solid fa-motorcycle"></i>
+
+                <h3>No Bikes Found</h3>
+
+                <p>No consultancy bike records are available.</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>Dear Customers, Call this number for doubts or queries.</p>
+
+        <p>&copy; 2023 iFinance. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- ================= SCRIPT ================= -->
+
+    <script src="consultancy-list.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    height:70px;
+    background:#2c3e50;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo i{
+    color:#FFD43B;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown button{
+    background:none;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    top:35px;
+    left:0;
+    min-width:220px;
+    background:#fff;
+    border-radius:6px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    z-index:999;
+}
+
+.dropdown-content a{
+    display:block;
+    padding:10px 15px;
+    color:#333;
+    text-decoration:none;
+}
+
+.dropdown-content a:hover{
+    background:#f2f2f2;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* ===========================
+   RIGHT MENU
+=========================== */
+
+.right-menu{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.right-menu input{
+    padding:8px 12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.go-btn{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.go-btn:hover{
+    background:#0b5ed7;
+}
+
+.profile{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+/* ===========================
+   BREADCRUMB
+=========================== */
+
+.breadcrumb{
+    background:#fff;
+    padding:15px 30px;
+    border-bottom:1px solid #ddd;
+    color:#666;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.page-title{
+    color:#2c3e50;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.page-title i{
+    color:#0d6efd;
+    margin-right:10px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.chart-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.chart-buttons button{
+    background:#0d6efd;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.chart-buttons button i{
+    margin-right:8px;
+}
+
+.chart-buttons button:hover{
+    background:#0b5ed7;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   CHART CARD
+=========================== */
+
+.chart-card{
+    background:#fff;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+}
+
+.chart-card canvas{
+    width:100% !important;
+    max-height:500px;
+}
+
+/* ===========================
+   CHART INFO
+=========================== */
+
+.chart-info{
+    margin-top:20px;
+    text-align:center;
+    color:#555;
+    font-size:16px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    margin-top:40px;
+    background:#2c3e50;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        gap:15px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .right-menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .chart-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .chart-buttons button{
+        width:220px;
+    }
+
+    .chart-card{
+        padding:15px;
+    }
+
+    .page-title{
+        font-size:24px;
+    }
+
+}

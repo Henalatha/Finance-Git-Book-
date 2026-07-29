@@ -1,0 +1,260 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#0d47a1;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 35px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.logo i{
+    color:#ffc107;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.menu a:hover{
+    color:#ffeb3b;
+}
+
+.profile i{
+    font-size:30px;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.container{
+    width:95%;
+    margin:30px auto;
+}
+
+.top-actions{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.top-actions button{
+    background:#0d47a1;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.top-actions button:hover{
+    background:#1565c0;
+}
+
+.breadcrumb{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.breadcrumb span{
+    color:#0d47a1;
+    font-weight:bold;
+}
+
+h2{
+    color:#0d47a1;
+    margin-bottom:25px;
+}
+
+/* =========================
+   BALANCE CARD
+========================= */
+
+.balance-card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.balance-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* =========================
+   TABLE BOX
+========================= */
+
+.table-box{
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    background:white;
+}
+
+.table-box h3{
+    background:#0d47a1;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1976d2;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #e0e0e0;
+}
+
+tr:nth-child(even){
+    background:#f9f9f9;
+}
+
+td:last-child,
+th:last-child{
+    text-align:right;
+}
+
+.total-row{
+    background:#e3f2fd;
+    font-weight:bold;
+    color:#0d47a1;
+}
+
+.total-row th{
+    background:#0d47a1;
+    color:white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:35px;
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.balance-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.menu{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.top-actions{
+    flex-direction:column;
+}
+
+.top-actions button{
+    width:100%;
+}
+
+.container{
+    width:98%;
+}
+
+table{
+    font-size:14px;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo{
+    font-size:20px;
+}
+
+h2{
+    font-size:22px;
+}
+
+.table-box h3{
+    font-size:18px;
+}
+
+th,
+td{
+    padding:10px;
+    font-size:13px;
+}
+
+footer{
+    font-size:13px;
+}
+
+}

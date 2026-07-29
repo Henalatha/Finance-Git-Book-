@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collection Report</title>
+    <link rel="stylesheet" href="collection-report.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-coins"></i> iFinance
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        Dashboard / Reports / <span>Collection Report</span>
+    </div>
+
+    <!-- Card -->
+    <div class="card">
+
+        <h2>Select Dates</h2>
+
+        <div class="form-group">
+            <label>From Date</label>
+            <input type="date" id="fromDate">
+        </div>
+
+        <div class="form-group">
+            <label>To Date</label>
+            <input type="date" id="toDate">
+        </div>
+
+        <div class="form-group">
+            <label>Users</label>
+
+            <select id="users">
+
+                <option>ALL</option>
+                <option>ADMN</option>
+                <option>BALA</option>
+                <option>SUBB</option>
+                <option>MANI</option>
+                <option>KISH</option>
+                <option>NDD</option>
+                <option>TNK</option>
+                <option>ELUR</option>
+                <option>NABH</option>
+                <option>NAND</option>
+                <option>TEJA</option>
+                <option>DURG</option>
+                <option>RAJA</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Routes</label>
+
+            <select id="routes">
+
+                <option>ALL</option>
+                <option>VENKATESWARAO</option>
+                <option>SWARNA</option>
+                <option>SURYA</option>
+                <option>SUBBU</option>
+                <option>MOHAN</option>
+                <option>MANIKANTA</option>
+                <option>LAKSHMAN</option>
+                <option>KISHORE</option>
+                <option>JANARDHNAN</option>
+                <option>BALU</option>
+
+            </select>
+
+        </div>
+
+        <button id="submitBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Submit
+        </button>
+
+    </div>
+
+</div>
+
+<script src="collection-report.js"></script>
+
+</body>
+</html>

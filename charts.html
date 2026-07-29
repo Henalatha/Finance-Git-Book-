@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Charts | iFinance</title>
+
+    <link rel="stylesheet" href="charts.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-building-columns"></i>
+
+            <span>iFinance</span>
+
+        </div>
+
+        <nav>
+
+            <div class="dropdown">
+
+                <button>
+
+                    Transactions
+
+                    <i class="fa-solid fa-angle-down"></i>
+
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="#">HandLoans</a>
+                    <a href="#">Consultancy</a>
+                    <a href="#">Capitals</a>
+                    <a href="#">Deposits</a>
+                    <a href="#">Cheques</a>
+                    <a href="#">Bank</a>
+                    <a href="#">Chits</a>
+                    <a href="#">Loans</a>
+
+                </div>
+
+            </div>
+
+            <div class="dropdown">
+
+                <button>
+
+                    Others
+
+                    <i class="fa-solid fa-angle-down"></i>
+
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="#">Masters</a>
+                    <a href="#">Agents</a>
+                    <a href="#">Settings</a>
+
+                </div>
+
+            </div>
+
+            <a href="index.html">Dashboard</a>
+
+        </nav>
+
+        <div class="right-menu">
+
+            <input type="text" placeholder="Search...">
+
+            <button class="go-btn">Go</button>
+
+            <img src="https://i.pravatar.cc/40" class="profile">
+
+            <span>Sri Aditya ▼</span>
+
+        </div>
+
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <section class="breadcrumb">
+
+        Dashboard / Charts
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <h2 class="page-title">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            Charts
+
+        </h2>
+
+        <!-- ================= CHART BUTTONS ================= -->
+
+        <div class="chart-buttons">
+
+            <button id="hpBtn">
+
+                <i class="fa-solid fa-motorcycle"></i>
+
+                HP's
+
+            </button>
+
+            <button id="financeBtn">
+
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                Financed Amount
+
+            </button>
+
+            <button id="collectionBtn">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                Collection
+
+            </button>
+
+        </div>
+
+        <!-- ================= CHART AREA ================= -->
+
+        <div class="chart-card">
+
+            <canvas id="financeChart"></canvas>
+
+        </div>
+        <!-- ================= CHART DESCRIPTION ================= -->
+
+        <div class="chart-info">
+
+            <p id="chartTitle">
+
+                Click one of the buttons above to view the corresponding chart.
+
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>Dear Customers, Call this number for doubts or queries.</p>
+
+        <p>&copy; 2023 iFinance. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="charts.js"></script>
+
+</body>
+
+</html>
