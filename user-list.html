@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List | iFinance</title>
+
+    <link rel="stylesheet" href="user-list.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>iFinance</span>
+        </div>
+
+        <nav>
+
+            <div class="dropdown">
+
+                <button>
+                    Transactions
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="#">HandLoans</a>
+                    <a href="#">Consultancy</a>
+                    <a href="#">Capitals</a>
+                    <a href="#">Deposits</a>
+                    <a href="#">Cheques</a>
+                    <a href="#">Bank</a>
+                    <a href="#">Chits</a>
+                    <a href="#">Loans</a>
+
+                </div>
+
+            </div>
+
+            <div class="dropdown">
+
+                <button>
+                    Others
+                    <i class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <a href="#">Income & Expense</a>
+                    <a href="#">Masters</a>
+                    <a href="#">Agents</a>
+                    <a href="#">Branches</a>
+
+                </div>
+
+            </div>
+
+            <a href="finance-list.html">Finance's</a>
+
+        </nav>
+
+        <div class="right-menu">
+
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search User...">
+
+            <button class="go-btn">
+                Go
+            </button>
+
+            <img src="https://i.pravatar.cc/40"
+                 class="profile">
+
+            <span>Sri Aditya ▼</span>
+
+        </div>
+
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+
+    <section class="breadcrumb">
+
+        Dashboard / Users
+
+    </section>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <div class="page-header">
+
+            <h2>Users</h2>
+
+            <button id="newUserBtn">
+                <i class="fa-solid fa-plus"></i>
+                New User
+            </button>
+
+        </div>
+
+        <!-- ================= USER TABLE ================= -->
+
+        <div class="table-container">
+
+            <table id="userTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>SNO</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Type</th>
+                        <th>Date</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>
+                            RAJA
+                            <br>
+                            <i class="fa-solid fa-house home-icon"></i>
+                        </td>
+
+                        <td>9347222370</td>
+
+                        <td>LINE EXECUTIVE</td>
+
+                        <td>13-03-2025</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>2</td>
+                        <td>DURGA</td>
+                        <td>6301549033</td>
+                        <td>CLERK</td>
+                        <td>20-06-2024</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>3</td>
+                        <td>TEJA</td>
+                        <td>7013945700</td>
+                        <td>CLERK</td>
+                        <td>20-06-2024</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>4</td>
+                        <td>NANDH</td>
+                        <td>9014596648</td>
+                        <td>CLERK</td>
+                        <td>14-06-2024</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>5</td>
+                        <td>NABHI</td>
+                        <td>8074045692</td>
+                        <td>CLERK</td>
+                        <td>13-06-2024</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>6</td>
+                        <td>JANARDAN</td>
+                        <td>9398311141</td>
+                        <td>LINE EXECUTIVE</td>
+                        <td>12-02-2024</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>7</td>
+                        <td>KONDA</td>
+                        <td>7780560493</td>
+                        <td>LINE EXECUTIVE</td>
+                        <td>04-11-2023</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>8</td>
+                        <td>VANI</td>
+                        <td>7032662533</td>
+                        <td>LINE EXECUTIVE</td>
+                        <td>16-06-1999</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>9</td>
+                        <td>KISHORE</td>
+                        <td>7780697177</td>
+                        <td>LINE EXECUTIVE</td>
+                        <td>01-03-2022</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>10</td>
+                        <td>MANI</td>
+                        <td>6304674007</td>
+                        <td>LINE EXECUTIVE</td>
+                        <td>05-01-2022</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>11</td>
+                        <td>SUBBU</td>
+                        <td>7075455447</td>
+                        <td>LINE EXECUTIVE</td>
+                        <td>29-12-2021</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>12</td>
+                        <td>BALAJI</td>
+                        <td>8008374901</td>
+                        <td>LINE EXECUTIVE</td>
+                        <td>29-12-2021</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>Dear Customers, Call this number for doubts or queries.</p>
+
+        <p>&copy; 2023 iFinance. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="user-list.js"></script>
+
+</body>
+
+</html>
